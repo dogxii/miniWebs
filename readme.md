@@ -3,7 +3,7 @@
 > [!NOTE]
 > 原项目: [bradtraversy/vanillawebprojects](https://github.com/bradtraversy/vanillawebprojects)
 >
-> 本仓库为汉化及个人完成记录
+> 本仓库为汉化及个人完成记录，你也可以fork此项目创建你的文件夹！
 
 ## 挑战目标
 
