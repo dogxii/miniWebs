@@ -1,14 +1,13 @@
-# 🚀 20 天 miniWebs 原生项目挑战 🚀
+# 🚀 20 天 miniWebs 挑战 🚀
 
 > [!NOTE]
 > 原项目: [bradtraversy/vanillawebprojects](https://github.com/bradtraversy/vanillawebprojects)
+>
 > 本仓库为汉化及个人完成记录
 
 ## 挑战目标
 
 🖐️ 在20天内完成20个使用原生 HTML5 + CSS + JavaScript 的 Web 项目，深入学习前端开发核心技能，提升编程实践能力。每天一个项目，完成后记得打✅标记进度！
-
-## 目录
 
 - [第1天: 表单验证器](#第1天-表单验证器)
 - [第2天: 电影座位预订](#第2天-电影座位预订)
