@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Movie Seat Booking</h1>
+
+    <form class="movie-selection">
+      <label for="movie">Pick a movie:</label>
+      <select id="movie" name="movie">
+        <option value="10">Avengers: Endgame ($10)</option>
+        <option value="12">Joker ($12)</option>
+        <option value="8">Toy Story 4 ($8)</option>
+        <option value="9">The Lion King ($9)</option>
+      </select>
+    </form>
+
+    <ul class="showcase">
+      <li><span class="seat"></span><small>N/A</small></li>
+      <li><span class="seat selected"></span><small>Selected</small></li>
+      <li><span class="seat occupied"></span><small>Occupied</small></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="theater">
+      <span class="screen"></span>
+
+      <div class="seating-area">
+        <ol class="row">
+          <li><span class="seat occupied"></span></li>
+          <li><span class="seat"></span></li>
+          <li><span class="seat"></span></li>
+          <li><span class="seat"></span></li>
+          <li><span class="seat occupied"></span></li>
+          <li><span class="seat"></span></li>
+          <li><span class="seat"></span></li>
+          <li><span class="seat"></span></li>
+        </ol>
+        <ol class="row">
+          <li><span class="seat"></span></li>
+          <li><span class="seat occupied"></span></li>
+          <li><span class="seat"></span></li>
+          <li><span class="seat occupied"></span></li>
+          <li><span class="seat"></span></li>
+          <li><span class="seat"></span></li>
+          <li><span class="seat"></span></li>
+          <li><span class="seat"></span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="summary">
+      <p class="text">
+        You have selected <output id="count">0</output> seat for a price of $<output id="total">0</output>
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
