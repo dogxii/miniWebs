@@ -1,6 +1,10 @@
 ## 刽子手游戏
 
-在有限次数的机会内选择一个字母来猜测隐藏的单词
+选择一个字母来猜测隐藏的单词
+
+- **项目链接**:
+  - [GitHub 仓库](https://github.com/dogxii/miniWebs/tree/master/Origin/hangman)
+  - [在线演示](https://vanillawebprojects.com/projects/hangman/)
 
 ### 项目规格
 

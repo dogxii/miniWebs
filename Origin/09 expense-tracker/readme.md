@@ -2,6 +2,10 @@
 
 跟踪收入和支出。添加和删除项目并保存到本地存储
 
+- **项目链接**:
+  - [GitHub 仓库](https://github.com/dogxii/miniWebs/tree/master/Origin/expense-tracker)
+  - [在线演示](https://vanillawebprojects.com/projects/expense-tracker/)
+
 ### 项目规格
 
 - 为项目创建 UI

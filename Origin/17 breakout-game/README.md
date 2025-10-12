@@ -2,6 +2,10 @@
 
 一个游戏，你用方向键控制一个挡板，弹起一个球来打碎砖块。这个应用使用 HTML5 画布元素和 API。
 
+- **项目链接**:
+  - [GitHub 仓库](https://github.com/dogxii/miniWebs/tree/master/Origin/breakout-game)
+  - [在线演示](https://vanillawebprojects.com/projects/breakout-game/)
+
 ### 项目规格
 
 - 在画布上绘制元素

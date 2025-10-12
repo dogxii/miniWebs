@@ -1,6 +1,10 @@
-### 记忆卡片
+## 记忆卡片
 
 用于学习的闪卡应用。显示、添加和删除带有问题和答案的记忆卡片
+
+- **项目链接**:
+  - [GitHub 仓库](https://github.com/dogxii/miniWebs/tree/master/Origin/memory-cards)
+  - [在线演示](https://vanillawebprojects.com/projects/memory-cards/)
 
 ### 项目规格
 

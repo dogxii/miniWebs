@@ -2,6 +2,10 @@
 
 通过打字随机单词来战胜时间的游戏
 
+- **项目链接**:
+  - [GitHub 仓库](https://github.com/dogxii/miniWebs/tree/master/Origin/typing-game)
+  - [在线演示](https://vanillawebprojects.com/projects/typing-game/)
+
 ### 项目规格
 
 - 创建游戏 UI，包括难度设置

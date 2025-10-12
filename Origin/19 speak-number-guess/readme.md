@@ -2,6 +2,10 @@
 
 使用语音识别 API 将你的猜测说出来的数字猜谜游戏
 
+- **项目链接**:
+  - [GitHub 仓库](https://github.com/dogxii/miniWebs/tree/master/Origin/speak-number-guess)
+  - [在线演示](https://vanillawebprojects.com/projects/speak-number-guess/)
+
 ### 项目规格
 
 - 显示 UI，指导用户说出猜测

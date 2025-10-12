@@ -2,6 +2,10 @@
 
 简单的客户端表单验证。检查必填项、长度、电子邮件和密码匹配
 
+- **项目链接**:
+  - [GitHub 仓库](https://github.com/dogxii/miniWebs/tree/master/Origin/form-validator)
+  - [在线演示](https://vanillawebprojects.com/projects/form-validator/)
+
 ### 项目规格
 
 - 创建表单 UI

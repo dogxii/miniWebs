@@ -2,6 +2,10 @@
 
 教授高阶数组方法和 DOM 操作的项目
 
+- **项目链接**:
+  - [GitHub 仓库](https://github.com/dogxii/miniWebs/tree/master/Origin/dom-array-methods)
+  - [在线演示](https://vanillawebprojects.com/projects/dom-array-methods/)
+
 ### 项目规格
 
 - 从 [randomuser.me](https://randomuser.me) API 获取随机用户

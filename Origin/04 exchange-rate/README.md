@@ -2,6 +2,10 @@
 
 选择国家获取特定金额的汇率
 
+- **项目链接**:
+  - [GitHub 仓库](https://github.com/dogxii/miniWebs/tree/master/Origin/exchange-rate)
+  - [在线演示](https://vanillawebprojects.com/projects/exchange-rate/)
+
 ### 项目规格
 
 - 显示带有 2 个国家选择列表和 2 个输入框的 UI
