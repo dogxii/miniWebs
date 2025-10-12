@@ -13,6 +13,8 @@ body {
   min-height: 100vh;
 }
 
+/* 视频播放器及控制条 */
+
 .player {
   width: 60%;
   cursor: pointer;
@@ -21,21 +23,38 @@ body {
 }
 
 .controls {
-  background-color: black;
+  background-color: #333333;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60%;
-  position: relative;
+  border-radius: 0 0 10px 10px;
 }
 
-.btn {
+/* 应该布局为controls=left center right更好 */
+
+.controls .btn {
   background: none;
   padding: 0;
   border: none;
   color: white;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 10px;
 }
 
-.timestamp {
+.controls .btn:hover {
+  color: #ddd;
+}
+
+#progress {
+  width: 90%;
+  height: 8px;
+  cursor: pointer;
+}
+
+#timestamp {
   color: white;
+  padding: 5px;
+  font-size: 15px;
 }
