@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Video Player</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/progress.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <h1>Custom Video Player</h1>
+
+  <video class="player" controls poster="img/poster.png">
+    <source src="videos/gone.mp4" type="video/mp4">
+    <a href="videos/gone.mp4" download="videos/gone.mp4">Download MP4</a>
+  </video>
+  <div class="controls">
+    <button id="play-pause" type="button" class="btn"><span class="fa fa-play fa-2x"></span></button>
+    <button id="stop" type="button" class="btn"><span class="fa fa-stop fa-2x"></span></button>
+    <progress id="progress" value="0" max="100"></progress>
+    <span id="timestamp">00:00</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
