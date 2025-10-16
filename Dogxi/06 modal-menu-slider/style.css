@@ -1,0 +1,101 @@
+:root {
+  --modal-duration: 1s;
+  --primary-color: #30336b;
+  --secondary-color: #be2edd;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* show-menu */
+.show-menu .menu {
+}
+
+/* nav | menu */
+
+.menu {
+  background-color: var(--primary-color);
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.logo {
+  width: 64px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.logo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu li:first-of-type {
+  padding: 10px 0;
+  border-top: 1px solid rgba(200, 200, 200, 0.1);
+}
+
+.menu li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.1);
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+/* header */
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+header button {
+}
+
+/* button */
+
+.btn {
+  border: none;
+  background: none;
+  font: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 30px;
+  font-size: 14px;
+}
+
+.btn.secondary {
+  color: white;
+  background-color: var(--secondary-color);
+}
