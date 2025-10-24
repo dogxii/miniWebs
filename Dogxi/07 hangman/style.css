@@ -1,0 +1,66 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #39495c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* header */
+
+header {
+  color: white;
+  text-align: center;
+}
+
+/* game-container */
+
+.game-container {
+  height: 350px;
+  width: 450px;
+  position: relative;
+}
+
+.figure-container {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 3px;
+}
+
+/* wrong-letters-container */
+
+.wrong-letters-container {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  color: white;
+  font-size: 20px;
+}
+
+/* word */
+
+.word {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  color: white;
+}
+
+.word .letter {
+  display: block;
+  width: 30px;
+  height: 40px;
+  margin: 0 5px;
+  border-bottom: 4px solid #437eb4;
+  font-size: 30px;
+  text-align: center;
+}
