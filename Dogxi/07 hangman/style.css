@@ -34,6 +34,14 @@ header {
   stroke-width: 3px;
 }
 
+.figure-part {
+  display: none;
+}
+
+.figure-part.show {
+  display: block;
+}
+
 /* wrong-letters-container */
 
 .wrong-letters-container {
@@ -63,4 +71,55 @@ header {
   border-bottom: 4px solid #437eb4;
   font-size: 30px;
   text-align: center;
+}
+
+#wrong-letters {
+  text-align: right;
+}
+
+#notification {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 50px;
+  border-radius: 12px 12px 0 0;
+  display: none;
+}
+
+#notification.show {
+  display: block;
+}
+
+/* popup-container */
+
+.popup-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-container.show {
+  display: flex;
+}
+
+.popup {
+  background-color: #437eb4;
+  padding: 25px;
+  color: white;
+}
+
+#play-btn {
+  background-color: white;
+  border: none;
+  color: #437eb4;
+  padding: 10px;
+  font: inherit;
 }
