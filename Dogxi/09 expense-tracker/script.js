@@ -73,10 +73,10 @@ function createTranscationDom(transaction) {
 }
 
 function deleteTransaction(e) {
-  const id = e.target.dataset.transactionId;
+  const id = e.currentTarget.dataset.transactionId;
   history = history.filter((trans) => trans.id != id);
 
-  e.target.remove();
+  e.currentTarget.remove();
 
   updateBalance();
 }
