@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="player">
+      <audio id="musicAudio" src="music/打火基.mp3"></audio>
+
+      <div class="grid-top">
+        <div class="cover">
+          <img src="music/打火基.jpg">
+        </div>
+
+        <div class="grid-right">
+          <div class="music">
+            <span class="title">打火基</span>
+            <span id="lyric" class="lyric">哈基米啊南北绿豆</span>
+            <span class="author"></span>
+          </div>
+
+          <div class="control">
+            <button id="prevBtn" class="prev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24">
+                <path fill="currentColor" d="m16 7l-7 5l7 5zm-7 5V7H7v10h2z" />
+              </svg></button>
+            <button id="playBtn" class="play"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24">
+                <path fill="currentColor" d="M7 6v12l10-6z" />
+              </svg></button>
+            <button id="nextBtn" class="next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24">
+                <path fill="currentColor" d="M7 7v10l7-5zm9 10V7h-2v10z" />
+              </svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <progress value="0.5"></progress>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
