@@ -95,16 +95,6 @@ const LRC_TEXT = `
 [01:58.95] 人声 : 何水水
 `;
 
-// 动画旋转
-let rotateDeg = 0;
-
-class ImageRotator {
-  constructor(el, angle = 0) {
-    this.el = el;
-    this.angle = angle;
-  }
-}
-
 function changePlay() {
   if (audioEl.paused) {
     // 播放
