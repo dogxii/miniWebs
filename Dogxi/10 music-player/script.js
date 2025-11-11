@@ -153,8 +153,9 @@ const lrcs = parseLrc(LRC_TEXT);
 const lyricEl = document.querySelector("#lyric");
 
 function searchLyric(time) {
-  if (time > lrcs[lrcs.length - 1]) {
-    return lrcs[lrcs.length - 1];
+  if (!lrcs || lrcs.length === 0) return "";
+  if (time >= lrcs[lrcs.length - 1].timeMs) {
+    return lrcs[lrcs.length - 1].text;
   }
 
   for (let i = 0; i < lrcs.length; i++) {
@@ -162,6 +163,8 @@ function searchLyric(time) {
       return lrcs[i].text;
     }
   }
+
+  return lrcs[0].text;
 }
 
 // 音频播放
