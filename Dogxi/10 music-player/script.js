@@ -179,8 +179,12 @@ audioEl.addEventListener("timeupdate", (e) => {
 const progressEl = document.querySelector("#progress");
 
 progressEl.addEventListener("click", (e) => {
-  progressEl.value = e.offsetX / progressEl.offsetWidth;
-  const targetTime = (e.offsetX / progressEl.offsetWidth) * audioEl.duration;
+  if (!audioEl.duration) return; // 防止 NaN
 
-  audioEl.currentTime = targetTime;
+  const rect = progressEl.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+  const percentage = clickX / rect.width;
+  const targetTime = percentage * audioEl.duration;
+
+  audioEl.currentTime = Math.max(0, Math.min(targetTime, audioEl.duration));
 });
