@@ -1,0 +1,86 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>滚动渐显示例</title>
+  <style>
+    /* 页面示意样式，仅用于产生滚动 */
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .section {
+      min-height: 80vh;
+      display: grid;
+      place-items: center;
+      padding: 40px;
+      background: #f7f7f9;
+      border-bottom: 1px solid #e5e5ea;
+    }
+
+    /* 初始状态：不可见且下移一点 */
+    .reveal {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 600ms ease, transform 600ms ease;
+      will-change: opacity, transform;
+      /* 提示浏览器优化 */
+    }
+
+    /* 进入视口后应用淡入效果 */
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 可选：为减少动态效果的用户关闭动画 */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="section">
+    <h1 class="reveal">欢迎来到 Landing Page</h1>
+  </div>
+  <div class="section">
+    <p class="reveal">当你滚动到我时，我会淡入显示。</p>
+  </div>
+  <div class="section">
+    <div class="reveal" style="width: 200px; height: 200px; background: black;">大方块</div>
+  </div>
+  <div class="section">
+    <button class="reveal">CTA 按钮也会渐显</button>
+  </div>
+
+  <script>
+    // 创建 IntersectionObserver
+    const observer = new IntersectionObserver((entries, obs) => {
+      for (const entry of entries) {
+        // 当元素在视口内达到设定阈值时
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          // 只触发一次：提高性能，避免重复计算
+          obs.unobserve(entry.target);
+        }
+      }
+    }, {
+      root: null,        // 以视口为根
+      rootMargin: '0px', // 可根据需要提前触发，如 '0px 0px -10% 0px'
+      threshold: 0.2     // 元素可见≥20%时触发
+    });
+
+    // 观察所有需要渐显的元素
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>

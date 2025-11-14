@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Scroll Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="filter-container">
+    <input type="text" class="search" id="search" placeholder="input content...">
+  </div>
+
+  <div id="error-container">
+  </div>
+
+  <div class="article-container">
+    <div id="article-list">
+      <!-- 哨兵元素💂 -->
+      <div id="sentinel" style="height: 1px;margin-bottom: 20px;"></div>
+    </div>
+    <div id="no-result" style="display: none;">
+      Noting to searched.
+    </div>
+  </div>
+
+  <div id="loading" class="loading">
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
